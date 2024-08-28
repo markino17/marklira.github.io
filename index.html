@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleNote</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="site-name">HardlySimple</li>
+            <li><button id="add-note">Add Note</button></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="center add-container" id="add-note-popup">
+            <form action="" id="add">
+                <input type="text" name="title" class="form-title" placeholder="Title" required>
+                <input type="text" name="content" class="form-content" placeholder="Type Here" required>
+                <select name="category" id="category" class="form-category">
+                    <option value="category_one">One</option>
+                    <option value="category_two">Two</option>
+                    <option value="category_three">Three</option>
+                </select>
+                <input type="submit" value="Save" class="form-submit">
+            </form>
+        </div>
+        <div class="center" id="view-note-popup">
+            <h3 class="form-title" id="view-title"></h3>
+            <p class="form-content" id="view-text"></p>
+            <button class="back">go back</button>
+        </div>
+        <div class="notes-list">
+            <ul id="all-notes">
+                
+            </ul>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

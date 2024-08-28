@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    background-color: #f5c37dd9;
+    font-family: monospace;
+}
+nav{
+    border: 2px solid #bfe7f6 ;
+    background-color: #bfe7f6;
+    
+}
+nav .site-name{
+    font-size: 1.8em;
+    color:white;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+nav li{
+    padding: 10px;
+    
+}
+li button{
+    padding: 6px;
+    border-color: white;
+    color: white;
+    text-shadow: 1px 1px #ffe666;
+    background-color: transparent;
+    font-size: larger;
+}
+main{
+    width: 90%;
+    margin: auto;
+}
+.notes-list{
+    margin: 5% auto;
+    min-height: 600px;
+    width: 90%;
+    border: 4px solid white;
+}
+main ul{
+    list-style-type: none;
+    padding: 10px 0;
+    
+}
+.notes-list li{
+    border-bottom: 1px solid gray;
+    width: 80%;
+    margin:auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.notes-list button{
+    
+}
+
+.center{
+    position: absolute;
+    top: 19%;
+    left: 9%;
+    background-color: #ffe666;
+    z-index: 9;
+
+}
+#add-note-popup, #view-note-popup{
+    width: 82%;
+    margin: auto;
+    height: 610px;
+    border: 3px solid gray;
+    display: none;
+}
+form{
+    height: 600px;
+    text-align: center;
+    margin-top: 10px;
+}
+.form-title{
+    height: 8%;
+    width: 90%;
+    margin-bottom: 5px;
+    border: none;
+    border-bottom: 2px solid gray;
+    background-color: inherit;
+    font-size: larger;
+}
+.form-content{
+    width: 90%;
+    height: 80%;
+    
+}
+
+.form-category{
+    width: 11%;
+    height: 5%;
+    position: absolute;
+    left: 10%;
+    bottom: 3%;
+}
+.form-submit{
+    right: 10%;
+    bottom: 3%;
+    height: 5%;
+    width: 100px;
+    position: absolute;
+}
+button{
+    cursor: pointer;
+}
+.back{
+    background-color: #ffe666;
+    border: none;
+    border-bottom: 2px solid gray;
+    bottom: 3%;
+    left: 10%;
+    width: 100px;
+    height: 5%;
+    position: inherit;
+    cursor: pointer;
+}
+h3.form-title, p.form-content{
+    margin: auto;
+}
